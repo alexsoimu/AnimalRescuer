@@ -1,11 +1,11 @@
 package org.fasttrackit;
 
-public class FoodForAnimals {
+public class Food {
 
     String name;
     double price;
     double quantity;
+    boolean inStock;
     String expirationDate;
-    boolean availabilityStock;
 
 }

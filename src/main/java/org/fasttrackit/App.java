@@ -9,40 +9,37 @@ public class App
     public static void main( String[] args )
     {
 
-        Animal animal = new Animal();
-        Adoption adoption = new Adoption();
-        FoodForAnimals foodForAnimals = new FoodForAnimals();
-        RecreationalActivity recreationalActivity = new RecreationalActivity();
-        Veterinarian veterinarian = new Veterinarian();
-        Game game = new Game();
+        Rescuer rescuer = new Rescuer();
+        rescuer.name = "Alex";
+        rescuer.availableAmount = 1000;
 
+        Animal animal = new Animal();
         animal.name = "Ginger";
         animal.age = 2;
-        animal.levelHealth = 10;
-        animal.levelHunger = 10;
-        animal.moodLevel = 10;
-        animal.favouriteFood = "meat";
-        animal.favouriteActivity = "digging";
+        animal.healthLevel = 10;
+        animal.hungerLevel = 10;
+        animal.happinessLevel = 10;
+        animal.favoriteFoodName = "meat";
+        animal.favoriteActivityName = "digging";
 
-        adoption.name = "Alex";
-        adoption.availableAmount = 1000;
+        EntertainmentActivity entertainmentActivity = new EntertainmentActivity();
+        entertainmentActivity.name = "Digging";
 
-        foodForAnimals.name = "Royal canin";
-        foodForAnimals.price = 750.47;
-        foodForAnimals.quantity = 10.5;
-        foodForAnimals.expirationDate = "05.2023";
-        foodForAnimals.availabilityStock = true;
+        Food food = new Food();
+        food.name = "Royal canin";
+        food.price = 750.47;
+        food.quantity = 10.5;
+        food.expirationDate = "05.2023";
+        food.inStock = true;
 
-        recreationalActivity.name = "Digging";
+        MedicalStaff medicalStaff = new MedicalStaff();
+        medicalStaff.name = "Flavius";
+        medicalStaff.specialization = "Veterinarian";
 
-        veterinarian.name = "Flavius";
-        veterinarian.specialization = "Veterinarian";
-
-        game.adoption = adoption;
-        game.dog = animal;
-        game.veterinarian = veterinarian;
-
-
+        Game game = new Game();
+        game.rescuer = rescuer;
+        game.animal = animal;
+        game.medic = medicalStaff;
 
     }
 }
