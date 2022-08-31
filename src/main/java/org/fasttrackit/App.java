@@ -28,7 +28,7 @@ public class App
         adoption.availableAmount = 1000;
 
         foodForAnimals.name = "Royal canin";
-        foodForAnimals.price = 750.87;
+        foodForAnimals.price = 750.47;
         foodForAnimals.quantity = 10.5;
         foodForAnimals.expirationDate = "05.2023";
         foodForAnimals.availabilityStock = true;
