@@ -8,4 +8,8 @@ public class Food {
     boolean inStock;
     String expirationDate;
 
+    public Food(String name) {
+        this.name = name;
+    }
+
 }

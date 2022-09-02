@@ -22,11 +22,11 @@ public class App
         animal.favoriteFoodName = "meat";
         animal.favoriteActivityName = "digging";
 
-        EntertainmentActivity entertainmentActivity = new EntertainmentActivity();
+        EntertainmentActivity entertainmentActivity = new EntertainmentActivity("Runing");
         entertainmentActivity.name = "Digging";
 
-        Food food = new Food();
-        food.name = "Royal canin";
+        Food food = new Food("Purina");
+        food.name = "Purina";
         food.price = 750.47;
         food.quantity = 10.5;
         food.expirationDate = "05.2023";
