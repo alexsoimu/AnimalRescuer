@@ -21,7 +21,7 @@ public class App
         animal.setFavoriteActivityName("Running");
         animal.setFavoriteFoodName("Pizza");
 
-        EntertainmentActivity entertainmentActivity = new EntertainmentActivity("Runing");
+        EntertainmentActivity activity = new EntertainmentActivity("Runing");
 
         Food food = new Food("Purina");
         food.setQuantity(10);
@@ -37,6 +37,9 @@ public class App
         game.setRescuer(rescuer);
         game.setAnimal(animal);
         game.setMedic(medicalStaff);
+
+        rescuer.feedAnimal(animal, food);
+        rescuer.entertain(animal, activity);
 
     }
 }
