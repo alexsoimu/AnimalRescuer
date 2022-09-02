@@ -10,36 +10,33 @@ public class App
     {
 
         Rescuer rescuer = new Rescuer();
-        rescuer.name = "Alex";
-        rescuer.availableAmount = 1000;
+        rescuer.setName("John");
+        rescuer.setAvailableAmount(300);
 
         Animal animal = new Animal();
-        animal.name = "Ginger";
-        animal.age = 2;
-        animal.healthLevel = 10;
-        animal.hungerLevel = 10;
-        animal.happinessLevel = 10;
-        animal.favoriteFoodName = "meat";
-        animal.favoriteActivityName = "digging";
+        animal.setName("Chaika");
+        animal.setAge(4.5);
+        animal.setHealthLevel(10);
+        animal.setHappinessLevel(10);
+        animal.setFavoriteActivityName("Running");
+        animal.setFavoriteFoodName("Pizza");
 
         EntertainmentActivity entertainmentActivity = new EntertainmentActivity("Runing");
-        entertainmentActivity.name = "Digging";
 
         Food food = new Food("Purina");
-        food.name = "Purina";
-        food.price = 750.47;
-        food.quantity = 10.5;
-        food.expirationDate = "05.2023";
-        food.inStock = true;
+        food.setQuantity(10);
+        food.setPrice(79.99);
+        food.setInStock(true);
+        food.setExpirationDate("05.2023");
 
         MedicalStaff medicalStaff = new MedicalStaff();
-        medicalStaff.name = "Flavius";
-        medicalStaff.specialization = "Veterinarian";
+        medicalStaff.setName("Dr. Who");
+        medicalStaff.setSpecialization("General Medicine");
 
         Game game = new Game();
-        game.rescuer = rescuer;
-        game.animal = animal;
-        game.medic = medicalStaff;
+        game.setRescuer(rescuer);
+        game.setAnimal(animal);
+        game.setMedic(medicalStaff);
 
     }
 }
