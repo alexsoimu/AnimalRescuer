@@ -51,5 +51,7 @@ public class App
         fish.setName("Bregovic");
         fish.expressJoy();
 
+        Dog dog1 = new Dog();
+
     }
 }
