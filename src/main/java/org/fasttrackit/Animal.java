@@ -10,6 +10,10 @@ public class Animal {
     private String favoriteFoodName;
     private String favoriteActivityName;
 
+    public void expressJoy() {
+        System.out.println(this.name + " is feeling good.");
+    }
+
     public String getName() {
         return name;
     }
@@ -65,4 +69,5 @@ public class Animal {
     public void setFavoriteActivityName(String favoriteActivityName) {
         this.favoriteActivityName = favoriteActivityName;
     }
+
 }
