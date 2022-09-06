@@ -5,8 +5,8 @@ public class Animal {
     private String name;
     private double age;
     private double healthLevel;
-    private int hungerLevel;
-    private int happinessLevel;
+    private double hungerLevel;
+    private double happinessLevel;
     private String favoriteFoodName;
     private String favoriteActivityName;
 
@@ -38,19 +38,19 @@ public class Animal {
         this.healthLevel = healthLevel;
     }
 
-    public int getHungerLevel() {
+    public double getHungerLevel() {
         return hungerLevel;
     }
 
-    public void setHungerLevel(int hungerLevel) {
+    public void setHungerLevel(double hungerLevel) {
         this.hungerLevel = hungerLevel;
     }
 
-    public int getHappinessLevel() {
+    public double getHappinessLevel() {
         return happinessLevel;
     }
 
-    public void setHappinessLevel(int happinessLevel) {
+    public void setHappinessLevel(double happinessLevel) {
         this.happinessLevel = happinessLevel;
     }
 
