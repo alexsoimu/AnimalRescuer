@@ -51,7 +51,7 @@ public class App
         fish.setName("Bregovic");
         fish.expressJoy();
 
-        System.out.println(animal.getHappinessLevel());
+        game.start();
 
     }
 }
